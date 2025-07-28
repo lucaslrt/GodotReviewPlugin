@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:supportsRtl="true"
+        tools:targetApi="31">
+
+        <!-- Declaração do plugin Godot -->
+        <meta-data
+            android:name="org.godotengine.plugin.v1.InAppReview"
+            android:value="com.pindorama.inappreviewgodotplugin.InAppReviewPlugin" />
+    </application>
+
+
+
+</manifest>

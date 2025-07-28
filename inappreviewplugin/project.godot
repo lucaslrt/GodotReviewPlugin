@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[android]
+
+gradle_build/use_gradle_build=true
+gradle_build/min_sdk=24
+gradle_build/target_sdk=35
+gradle_build/export_format=1
+
+[application]
+
+config/name="InAppReviewPlugin"
+run/main_scene="uid://dhs35q583nu8j"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+InAppReview="*res://addons/in-app_review/in-app_review.gd"
+
+[display]
+
+window/size/viewport_width=648
+window/size/viewport_height=1152
+window/handheld/orientation=1
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/in-app_review/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
